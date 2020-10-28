@@ -41,9 +41,9 @@ pipeline {
            }
        }
        stage('Publish') {
-           environment {
-               
-           }
+//          environment {
+//               
+//           }
            steps{
                script {
                    def appimage = docker.build registry + ":$BUILD_NUMBER"
