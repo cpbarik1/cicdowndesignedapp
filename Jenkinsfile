@@ -1,9 +1,10 @@
 pipeline {
    agent any
    environment {
-       registry = "registry.hub.docker.com/cpbarik1"
+       registry = "cpbarik1/gorepo"
        GOCACHE = "/tmp"
-   }
+       registryCredential = 'dockerhub1'
+     }
    stages {
        stage('Build') {
            agent {
@@ -41,7 +42,7 @@ pipeline {
        }
        stage('Publish') {
            environment {
-               registryCredential = 'dockerhub1'
+               
            }
            steps{
                script {
