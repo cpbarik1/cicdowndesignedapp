@@ -1,9 +1,9 @@
 pipeline {
    agent any
    environment {
-       registry = "regitry.hub.docker.com/cpbarik1"
-       GOCACHE = "/tmp"
-       registryCredential = 'dockerhub1'
+       registry = 'regitry.hub.docker.com/cpbarik1'
+       GOCACHE = '/tmp'
+       registryCredential = 'dockerhub2'
      }
    stages {
        stage('Build') {
