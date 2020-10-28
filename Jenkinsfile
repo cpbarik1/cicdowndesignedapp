@@ -1,7 +1,7 @@
 pipeline {
    agent any
    environment {
-       registry = "hub.docker.com"
+       registry = "registry.hub.docker.com"
        GOCACHE = "/tmp"
    }
    stages {
