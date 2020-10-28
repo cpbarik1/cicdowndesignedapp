@@ -1,7 +1,7 @@
 pipeline {
    agent any
    environment {
-       registry = "cpbarik1/gorepo"
+       registry = "regitry.hub.docker.com/cpbarik1"
        GOCACHE = "/tmp"
        registryCredential = 'dockerhub1'
      }
